@@ -10,9 +10,10 @@ const setUpDatabase = () => {
 
     const Cat = CatModel(connection, Sequelize);
 
+    // allow changes to be saved into the DB.
     connection.sync({ alter: true });
 
-    return {Cat};
+    return { Cat };
 };
 
 module.exports = setUpDatabase();

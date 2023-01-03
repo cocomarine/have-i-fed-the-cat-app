@@ -1,3 +1,4 @@
+// model for 'Cat' table
 module.exports = (sequelize, DataTypes) => {
     const schema = {
         name: DataTypes.STRING,
